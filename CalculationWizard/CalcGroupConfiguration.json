@@ -1,0 +1,81 @@
+{
+  "CalcGroupConfiguration": [
+    {
+      "Type": "Config",
+      "Item": "groupname",
+      "Value": "Time Intelligence",
+      "Format": "",
+      "Ordinal": 0
+    },
+    {
+      "Type": "Config",
+      "Item": "columnname",
+      "Value": "Time Calculations",
+      "Format": "",
+      "Ordinal": 0
+    },
+    {
+      "Type": "CalculationItem",
+      "Item": "CP",
+      "Value": "SELECTEDMEASURE()",
+      "Format": "",
+      "Ordinal": 1
+    },
+    {
+      "Type": "CalculationItem",
+      "Item": "PY",
+      "Value": "CALCULATE(SELECTEDMEASURE(), SAMEPERIODLASTYEAR(<DC>))",
+      "Format": "",
+      "Ordinal": 5
+    },
+    {
+      "Type": "CalculationItem",
+      "Item": "YOY",
+      "Value": "SELECTEDMEASURE()-CALCULATE(SELECTEDMEASURE(),<CGC>=\"PY\")",
+      "Format": "",
+      "Ordinal": 6
+    },
+    {
+      "Type": "CalculationItem",
+      "Item": "YOY%",
+      "Value": "DIVIDE(CALCULATE(SELECTEDMEASURE(),<CGC>=\"YOY\"), CALCULATE(SELECTEDMEASURE(),<CGC>=\"PY\"))",
+      "Format": "\"0.00%\"",
+      "Ordinal": 5
+    },
+    {
+      "type": "CalculationItem",
+      "Item": "LM",
+      "Value": "CALCULATE(SELECTEDMEASURE(), DATEADD(<DC>,-1,MONTH))",
+      "Format": "",
+      "Ordinal": 2
+    },
+    {
+      "type": "CalculationItem",
+      "Item": "QTD",
+      "Value": "CALCULATE(SELECTEDMEASURE(), DATESQTD(<DC>))",
+      "Format": "",
+      "Ordinal": 3
+    },
+    {
+      "type": "CalculationItem",
+      "Item": "YTD",
+      "Value": "CALCULATE(SELECTEDMEASURE(), DATESYTD(<DC>))",
+      "Format": "",
+      "Ordinal": 4
+    },
+    {
+      "type": "CalculationItem",
+      "Item": "PY YTD",
+      "Value": "CALCULATE(SELECTEDMEASURE(),SAMEPERIODLASTYEAR(<DC>),<CGC>=\"YTD\")",
+      "Format": "",
+      "Ordinal": 7
+    },
+    {
+      "type": "CalculationItem",
+      "Item": "PY QTD",
+      "Value": "CALCULATE(SELECTEDMEASURE(),SAMEPERIODLASTYEAR(<DC>),<CGC>=\"QTD\")",
+      "Format": "",
+      "Ordinal": 8
+    }
+  ]
+}
