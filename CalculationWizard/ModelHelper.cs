@@ -64,7 +64,7 @@ namespace CalculationWizard
 
                     //Upgrade the compat level if needed
                     int compatLevel = server.Databases[0].CompatibilityLevel;
-                    if (compatLevel < 1470)
+                    if (compatLevel < 1500)
                         server.Databases[0].CompatibilityLevel = 1520;
 
                     bool _hasDatecolumn = false;
