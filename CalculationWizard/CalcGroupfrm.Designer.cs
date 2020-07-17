@@ -31,7 +31,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnAddCalcGroup = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRemoveCalcGroup = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -62,22 +62,22 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // button1
+            // btnRemoveCalcGroup
             // 
-            this.button1.Location = new System.Drawing.Point(273, 519);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(252, 39);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Remove the Calculation Group";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnRemoveCalcGroup.Location = new System.Drawing.Point(273, 519);
+            this.btnRemoveCalcGroup.Name = "btnRemoveCalcGroup";
+            this.btnRemoveCalcGroup.Size = new System.Drawing.Size(252, 39);
+            this.btnRemoveCalcGroup.TabIndex = 3;
+            this.btnRemoveCalcGroup.Text = "Remove the Calculation Group";
+            this.btnRemoveCalcGroup.UseVisualStyleBackColor = true;
+            this.btnRemoveCalcGroup.Click += new System.EventHandler(this.btnRemoveCalcGroup_Click);
             // 
             // CalcGroupfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 586);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRemoveCalcGroup);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAddCalcGroup);
             this.Controls.Add(this.richTextBox1);
@@ -93,7 +93,7 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnAddCalcGroup;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRemoveCalcGroup;
     }
 }
 

@@ -30,14 +30,19 @@ namespace CalculationWizard
 
         private void LoadModel()
         {
-            string[] args = Environment.GetCommandLineArgs();
-
-            string DesktopConnString = args[1];
-            string DesktopModel = args[2];
-            ConfigHelper.CalcGroupConfigurationItems Config;
-
+           
             try
             {
+                string[] args = Environment.GetCommandLineArgs();
+                if (args.Count() != 2)
+                {
+                    throw new ApplicationException("Please use this application directly from Power BI.");
+                }
+                string DesktopConnString = args[1];
+                string DesktopModel = args[2];
+                ConfigHelper.CalcGroupConfigurationItems Config;
+
+            
                 Config = ConfigHelper.readCalculationItemsfromFile(Application.StartupPath + "/CalcGroupConfiguration.json");
                 string GroupName = ConfigHelper.ParseGroupName(Config);
                 string ColumnName = ConfigHelper.ParseColumnName(Config);
@@ -49,6 +54,8 @@ namespace CalculationWizard
             catch (Exception ex)
             {
                 richTextBox1.Text = richTextBox1.Text + "\r\n Error: " + ex.Message;
+                btnAddCalcGroup.Enabled = false;
+                btnRemoveCalcGroup.Enabled = false;
             }
         }
 
@@ -66,7 +73,7 @@ namespace CalculationWizard
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnRemoveCalcGroup_Click(object sender, EventArgs e)
         {
             try
             {
@@ -79,5 +86,6 @@ namespace CalculationWizard
                 richTextBox1.Text = richTextBox1.Text + "\r\n Error: " + ex.Message;
             }
         }
-    }
+
+   }
 }

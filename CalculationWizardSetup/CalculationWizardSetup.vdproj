@@ -460,7 +460,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_90C5F37C6BEC4F0BA5E76F6CFCA55C46"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFilesFolder]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -498,7 +498,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Calculation Wizard"
         "ProductCode" = "8:{05DF17EC-BC55-433D-8EED-32F249D2F587}"
-        "PackageCode" = "8:{24C8B0DE-71D7-402A-98A5-518959191B95}"
+        "PackageCode" = "8:{9FBC57CA-776B-4D9E-A665-8B85AC8FD382}"
         "UpgradeCode" = "8:{5AB3A0BD-52E1-490D-A921-06CB9679708E}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1017,6 +1017,34 @@
         }
         "ProjectOutput"
         {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_72A9E7608C6744CDBD4264D44E18B168"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_90C5F37C6BEC4F0BA5E76F6CFCA55C46"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:ContentFiles"
+            "OutputProjectGuid" = "8:{A82AEA7B-4054-4871-93D8-CDCDB53B70C9}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_AECD599353AB43EA9B3448B1DD496FCD"
             {
             "SourcePath" = "8:..\\CalculationWizard\\obj\\Release\\CalculationWizard.exe"
